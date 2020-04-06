@@ -41,7 +41,7 @@ def get_hourly_forecasts(zip_code=MY_ZIP, country_code=COUNTRY_CODE):
 
 if __name__ == "__main__":
 
-    if APP_ENV == "development":
+    if APP_ENV == "development": # on your computer
         zip_code = input("PLEASE INPUT A ZIP CODE (e.g. 06510): ")
         results = get_hourly_forecasts(zip_code=zip_code) # invoke with custom params
     else:
